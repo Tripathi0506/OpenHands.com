@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+     <!-- Fonts -->
+     <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'> -->
+
+     <!-- Bootsrap -->
+     <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+
+     <!-- Font awesome -->
+     <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+     <!-- Template main Css -->
+     <link rel="stylesheet" href="../css/signup.css">
+     
+     <!-- Modernizr -->
+     <!-- <script src="assets/js/modernizr-2.6.2.min.js"></script> -->
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <!-- <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div> -->
+                <span>or use your email for registaration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <!-- <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div> -->
+                <span>or use your email password</span>
+                
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget your Password? </a>
+                <button>Sign In</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of sites features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+            </div>
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello Friends!</h1>
+                    <p>Register with your personal details to use all of sites features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <form action="" method="">
+            <div class="title">
+                <h2>Sign In</h2>
+            </div>
+            <div class="box">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+                <button>Login</button>
+            </div>
+        </form> -->
+    </div>
+
+
+    <script>
+        const container = document.getElementById('container');
+        const registerBtn = document.getElementById('register');
+        const loginBtn = documengt.getElementById('login');
+
+        registerBtn.addEventListener('click', ()=>{
+            container.classList.add("active");
+        })
+        loginBtn.addEventListener('click', ()=>{
+            container.classList.remove("active");
+        })
+    </script>
+</body>
+</html>
