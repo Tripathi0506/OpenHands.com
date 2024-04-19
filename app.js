@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
+
 const mongoose = require('mongoose')
 const ejsMate = require('ejs-mate')
 const methodOverride = require('method-override')
@@ -7,7 +11,7 @@ const app = express()
 
 const path = require('path')
 
-mongoose.connect('mongodb://localhost:27017/openHands')
+mongoose.connect(process.env.URL_MONGO)
     .then(async () => {
         console.log('Mongo Open')
         app.listen(5000,()=>{
