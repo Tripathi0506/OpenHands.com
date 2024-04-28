@@ -495,7 +495,7 @@ form .alert {
 .btn-primary {
   background: #115c9b;
   border: none;
-  border-radius: 0;
+  border-radius: 2;
   padding: 10px 25px;
   border: 1px solid transparent;
   -moz-transition: all, 0.3s;
@@ -503,6 +503,7 @@ form .alert {
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
 }
+
 .btn-primary:hover {
   background: #fff;
   color: #1f76bd;
